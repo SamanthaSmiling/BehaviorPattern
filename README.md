@@ -21,9 +21,6 @@ __Project Outline__
 
 
 
-
-
-
 # Project Overview
 
 ## Project Dependencies
@@ -43,24 +40,24 @@ The structure of the project is as follows:
 
 ```text
 - ./
-    - UserProfile.py
     - LICENSE
     - requirements.txt
-    - BehaviorPatten.code-workspace
-    - SalesPrediction.py
-    - corelationExplore.py
+    - READMEtmp.md
+    - behavior_pattern.py
     - README.md
-    - BehaviorPatten.py
+    - corelation_explore.py
+    - sales_prediction.py
+    - user_profile.py
     - images/
-        - prediction.png
-        - overview.png
-        - sector.png
-        - brand.png
+        - coralation.png
+        - Home.png
+        - UserPortrait.png
     - __pycache__/
     - ODPSmocker/
         - data_mocker.py
         - readme_gnr.py
         - user_data_mocker.py
     - data/
+        - user_data.csv
         - transaction_data.csv
 ```
