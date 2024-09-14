@@ -1,7 +1,14 @@
+"""
+This module contains functions related to behavioral patterns analysis.
+"""
+# pylint: disable=C0301
+
+# Third-party imports
 import pandas as pd
+
 import matplotlib.pyplot as plt
 import seaborn as sns
-import numpy as np
+
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
@@ -13,7 +20,6 @@ df = pd.read_csv('data/user_data.csv')
 # ---- 数据预处理 ---- #
 df = df.dropna(subset=['Predicted MBTI', 'Predicted Zodiac Sign'])
 
-# 计算每个用户的总销量（类目1、类目2、类目3 过去90天的行为次数总和作为销量表示）
 df['Total Sales'] = df[['90-day Cat1 Actions', '90-day Cat2 Actions', '90-day Cat3 Actions']].sum(axis=1)
 
 # 标准化类目行为次数

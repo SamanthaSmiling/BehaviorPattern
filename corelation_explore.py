@@ -1,8 +1,14 @@
-import numpy as np
+"""
+This module explores correlations between various datasets.
+"""
+
+# pylint: disable=C0301
+
+# Third-party imports
 import pandas as pd
-from scipy.stats import chi2_contingency
-import seaborn as sns
 import matplotlib.pyplot as plt
+import seaborn as sns
+
 from scipy.stats import chi2_contingency
 
 
@@ -29,7 +35,7 @@ chi2_results = {
     'MBTI_p_value': p_mbti
 }
 
-chi2_results
+# chi2_results
 
 # Step 3: Visualization with heatmaps for Zodiac and MBTI correlation with 88VIP status
 # Conclusion based on the Chi-Square results:
@@ -76,3 +82,7 @@ plt.tight_layout()
 
 # Show the figure
 plt.show()
+
+# Existing last line
+
+# Add an extra line here
