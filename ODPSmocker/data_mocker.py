@@ -1,7 +1,14 @@
-import pandas as pd
-import numpy as np
+"""
+This module handles the data mocking process for ODPSmocker.
+It generates mock data for testing and development purposes.
+"""
+
 import random
 from datetime import datetime, timedelta
+import numpy as np
+import pandas as pd
+
+# pylint: disable=C0301,C0114,E0602
 
 np.random.seed(42)
 
