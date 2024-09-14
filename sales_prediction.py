@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import textwrap
 # 读取 CSV 文件
-df = pd.read_csv('user_data.csv')
+df = pd.read_csv('data/user_data.csv')
 
 # 定义权重
 weights = {

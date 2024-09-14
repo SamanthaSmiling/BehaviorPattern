@@ -8,7 +8,7 @@ from scipy.stats import chi2_contingency
 
 
 # 读取 CSV 文件
-user_data = pd.read_csv('user_data.csv')
+user_data = pd.read_csv('data/user_data.csv')
 print(user_data.columns)
 # user_data.columns = user_data.columns.str.strip()  # Removes leading/trailing spaces
 

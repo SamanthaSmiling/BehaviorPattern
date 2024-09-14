@@ -5,7 +5,7 @@ import numpy as np
 import textwrap
 
 # Read CSV files to dataframe
-df = pd.read_csv('user_data.csv')
+df = pd.read_csv('data/user_data.csv')
 
 # panel for 4 subplots
 fig, axes = plt.subplots(2, 2, figsize=(15, 12))

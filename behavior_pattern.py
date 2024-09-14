@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 
 # 读取 CSV 文件
-df = pd.read_csv('user_data.csv')
+df = pd.read_csv('data/user_data.csv')
 # ---- 数据预处理 ---- #
 df = df.dropna(subset=['Predicted MBTI', 'Predicted Zodiac Sign'])
 
