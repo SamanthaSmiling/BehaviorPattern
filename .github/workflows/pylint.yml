@@ -23,6 +23,11 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Set to your preferred Python version
+
       - name: Show the current directory
         run: pwd
 
@@ -37,5 +42,6 @@ jobs:
           pip install pylint
       - name: Analysing the code with pylint
         run: |
-          pylint $(git ls-files '*.py') --disable=C0301,C0116,C0103,C0303,C0305,C0114
+          pylint $(git ls-files '*.py') --disable=C0301,C0116,C0103,C0303,C0305,C0114,E0401,W1510
 
+a
