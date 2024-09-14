@@ -18,7 +18,7 @@ def generate_requirements():
         subprocess.run(['pipreqs', '.', '--force'], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Error generating requirements.txt: {e}")
-        return
+        # return
 
 def generate_directory_structure(start_path='.'):
     """

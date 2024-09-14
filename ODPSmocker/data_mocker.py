@@ -2,13 +2,14 @@
 This module handles the data mocking process for ODPSmocker.
 It generates mock data for testing and development purposes.
 """
+
+from datetime import datetime, timedelta
 import random  # Standard library first
-import string  # Standard library
 import pandas as pd  # Third-party libraries
 import numpy as np  # Third-party libraries
 
 
-from datetime import datetime, timedelta
+
 
 
 # pylint: disable=C0301,C0114,E0602
