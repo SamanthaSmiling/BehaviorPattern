@@ -1,7 +1,10 @@
-import pandas as pd
-import numpy as np
-import random
-import string
+
+
+import random  # Standard library first
+import string  # Standard library
+import pandas as pd  # Third-party libraries
+import numpy as np  # Third-party libraries
+
 
 # 设置随机种子
 np.random.seed(42)
